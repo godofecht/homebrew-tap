@@ -7,7 +7,7 @@ cask "whispergo" do
   desc "Local push-to-talk dictation. Hold a key, speak, release"
   homepage "https://quilio.dev/store"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
   depends_on arch: :arm64
 
   app "WhisperGo.app"
