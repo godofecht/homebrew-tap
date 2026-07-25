@@ -1,6 +1,6 @@
 cask "whispergo" do
-  version "0.8.0"
-  sha256 "8c757f7dea910d7e6f21c94c7494998a2a5c1e08c8f4a60d5f01c8fd506787ee"
+  version "0.9.0"
+  sha256 "f1a457af659b10294acf7eb48f19e62b179116adaece2d649c430882b579c4ef"
 
   url "https://quilio.dev/downloads/WhisperGo-#{version}-macOS-arm64.dmg"
   name "WhisperGo"
