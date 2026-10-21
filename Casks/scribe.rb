@@ -1,23 +1,26 @@
-cask "whispergo" do
+cask "scribe" do
   version "0.10.5"
   sha256 "bfa9c6ae5058453f014b56933cc6b77286853da887b242c61b86a993ecf9e137"
 
-  url "https://quilio.dev/downloads/WhisperGo-#{version}-macOS-arm64.dmg"
-  name "WhisperGo"
+  url "https://quilio.dev/downloads/Scribe-#{version}-macOS-arm64.dmg"
+  name "Scribe"
   desc "Local push-to-talk dictation. Hold a key, speak, release"
   homepage "https://quilio.dev/whispergo"
 
   depends_on macos: :ventura
   depends_on arch: :arm64
 
-  app "WhisperGo.app"
+  app "Scribe.app"
 
   zap trash: [
+    "~/Library/Application Support/Scribe",
     "~/Library/Application Support/whispergo",
+    "~/Library/LaunchAgents/com.quilio.scribe.login.plist",
+    "~/Library/LaunchAgents/com.whispergo.login.plist",
   ]
 
   caveats <<~EOS
-    WhisperGo runs free for 14 days on first launch, no account needed.
+    Scribe runs free for 14 days on first launch, no account needed.
     After that, a license unlocks dictation, sold at
     https://quilio.dev/whispergo.
 
