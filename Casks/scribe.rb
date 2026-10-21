@@ -5,7 +5,7 @@ cask "scribe" do
   url "https://quilio.dev/downloads/Scribe-#{version}-macOS-arm64.dmg"
   name "Scribe"
   desc "Local push-to-talk dictation. Hold a key, speak, release"
-  homepage "https://quilio.dev/whispergo"
+  homepage "https://quilio.dev/scribe"
 
   depends_on macos: :ventura
   depends_on arch: :arm64
@@ -22,7 +22,7 @@ cask "scribe" do
   caveats <<~EOS
     Scribe runs free for 14 days on first launch, no account needed.
     After that, a license unlocks dictation, sold at
-    https://quilio.dev/whispergo.
+    https://quilio.dev/scribe.
 
     On first launch, grant Microphone, Accessibility, and Input
     Monitoring in System Settings, then relaunch the app.
